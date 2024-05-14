@@ -6,49 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>учебная страница</title><!-- сайт по планированию дизайна дома-->
-        <style>
-
-            .row>div {
-                height: 5rem;
-                justify-content: space-around;
-                border: 1px solid black;
-            }
-
-            section {
-                height: 100vh;
-                gap : 6px;
-                display: grid;
-                grid:
-                "header" auto
-                "image" 0.5fr
-                "scroll" 0.33fr
-                "main" 1fr
-                "form" 0.33fr
-                "footer" auto
-                
-            }
-
-            main{
-               display: grid;
-               grid-template-columns: 60% auto 100px;
-               grid-template-rows: auto;
-               gap: 3px;
-            }
-            main>.info, .pressbutton, .line{
-                border: 1px solid black;
-            }
-
-            header{
-                margin-top: 6px;
-                border: 1px solid black;
-            }
-
-            
-            footer, .image, .scroll, form{   
-                border: 1px solid black;
-            }
-            
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -78,42 +36,48 @@
                 </nav>
             </div>
         </div>
-
-        <section> <!-- основной контент сайта -->
-            <header> <!--Параграф с текстовыми загловками  -->
+        <!-- основной контент сайта -->
+        <section class="layout"> 
+            <!--Параграф с текстовыми загловками  -->
+            <header> 
                 <h1> `здесь создаются ваши Дизайны` </h1>
             </header>
-
+            <!-- картинка-->
             <div class="image">
                 <img src="https://optim.tildacdn.com/tild6138-6564-4732-b832-653061376239/-/format/webp/_3_2_1.png" width="500" height="100" alt="Дизайн">
             </div>
 
-            <div class="scroll"> <!-- секция для скролла вниз -->
+            <!-- секция для скролла вниз -->
+            <div class="scroll"> 
                 scroll
             </div>
                 
-            <main><!--контент -->
-                <div class="info">
-                    <p> Информация</p>
-                    <p>примеры</p>
-                    <p>интерактив</p>
-                </div>
-                <div class="pressbutton">
-                    адад
-                </div>
+            <!--контент -->
+            <div class="main">
+                <div class="info"><!--информация -->
+                        <p> Информация</p>
+                        <p>примеры</p>
+                        <p>интерактив</p>
+                    </div>
+                <div class="pressbutton"><!--какие-то кнопки  -->
+                        адад
+                    </div>
                 <div class="line"> <!--декоративная линия -->
-                    ааа
+                        ааа
                 </div>
-            </main>
-
-            <form action=""><!--форма для отправки данных -->
+            </div>
+            <!--форма для отправки данных -->
+            <form action="">
                 поле для формы данных
             </form>
-
+            <!--footer  -->
             <footer>
                     права защищены
             </footer>
+
         </section>
+
+        
     </body>
 
 </html>

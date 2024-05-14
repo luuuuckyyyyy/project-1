@@ -1,0 +1,84 @@
+/* .row>div {
+    height: 5rem;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+section {
+    height: 100vh;
+    gap: 6px;
+    display: grid;
+    grid:
+        "header" auto "image" 0.5fr "scroll" 0.33fr "main" 1fr "form" 0.33fr "footer" auto
+}
+
+main {
+    display: grid;
+    grid-template-columns: 60% auto 100px;
+    grid-template-rows: auto;
+    gap: 3px;
+}
+
+main>.info,
+.pressbutton,
+.line {
+    border: 1px solid black;
+}
+
+header {
+    margin-top: 6px;
+    border: 1px solid black;
+}
+
+
+footer,
+.image,
+.scroll,
+form {
+    border: 1px solid black;
+}
+ */
+ .main{
+    display: grid;
+    grid: "info pressbutton line" / auto 1fr auto;
+    gap:6px
+ }
+
+ .layout {
+    width: auto;
+    height: 1080px;
+  
+    display: grid;
+    grid:
+    /* "header" auto "image" 0.5fr "scroll" 0.33fr "main" 1fr "form" 0.33fr "footer" auto */
+      "header header header" auto
+      "image image image" 0.5fr
+      "scroll scroll scroll" auto
+      "main main main" 1fr 
+      "form form form" 0.33fr
+      "footer footer footer" auto;
+      
+    gap: 6px;
+  }
+  
+header,
+footer,
+.image,
+.scroll,
+main,
+form,
+.info,
+.pressbutton,
+.line {
+    border: 1px solid black;
+}
+
+  header { grid-area: header; }
+  .image { grid-area: image; }
+  .scroll { grid-area: scroll; }
+  .main { grid-area: main; }
+  .info {grid-area: info;}
+  .pressbutton {grid-area: pressbutton;}
+  .line {grid-area: line;}
+  form {grid-area: form;}
+  footer { grid-area: footer; }
