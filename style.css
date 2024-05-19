@@ -43,13 +43,13 @@ form {
     height: 100vh;
  }
 
-   .main{
+    .main{
         display: grid;
         grid: 
-        "pressbutton line" 
-        "info line" / 90vw auto;
+        "info pressbutton line" auto;
+        gap: 5px;
      }
-
+        
 
 
  .layout {
