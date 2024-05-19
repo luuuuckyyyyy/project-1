@@ -38,11 +38,17 @@ form {
     border: 1px solid black;
 }
  */
+
+ .layout{
+    height: 100vh;
+ }
+
  .main{
     display: grid;
-    grid: "info pressbutton line" / auto 1fr auto;
+    grid: "info pressbutton line" / 1fr auto auto;
     gap:6px
  }
+
 
  .layout {
     width: auto;
@@ -57,10 +63,9 @@ form {
       "main main main" 1fr 
       "form form form" 0.33fr
       "footer footer footer" auto;
-      
     gap: 6px;
   }
-  
+
 header,
 footer,
 .image,
@@ -82,3 +87,56 @@ form,
   .line {grid-area: line;}
   form {grid-area: form;}
   footer { grid-area: footer; }
+
+
+
+
+@media(max-width:630px) {
+    header >h1{
+        display: flex;
+        font-size: 2rem;
+    }
+
+    .main{
+        display: grid;
+        grid: "info pressbutton line" / 1fr 1fr auto;
+        gap:6px
+     }  
+
+    
+    .layout {
+        grid:
+          "header" auto
+          "image" 0.1fr
+          "scroll" auto
+          "main" 0.5fr
+          "form" 0.33fr
+          "footer" auto;
+      }
+    
+}
+
+@media(max-width: 992px){
+    nav{
+        padding:5%;
+    }
+}
+
+
+@media(max-width:502px) {
+    header>h1{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:1200px) {
+}
+
+@media(max-width:992px) {
+
+}
+
+@media(max-width:480px) {
+}
+@media(max-width:320px) {
+}

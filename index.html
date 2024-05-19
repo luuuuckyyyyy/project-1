@@ -10,46 +10,34 @@
     </head>
 
     <body>
-        <div class="row"><!--навигационная панель сайта -->
-            <div class="col-md-2"> logo</div> <!-- Логотип -svg, подпись-->
-            <div class="col-md-4">article</div> <!--Название -->
-            <div class="col-md-6">
-                <nav class="navbar navbar-expand-lg mt-2"> <!-- навигация по html страницам проекта -->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link disabled">Disabled</a>
-                            </li>
+        <nav>
+            <div class="row"><!--навигационная панель сайта -->
+                <div class="col-2 col-md-2 col-sm-2"> logo</div> <!-- Логотип -svg, подпись-->
+                <div class="col-2 col-md-2 col-sm-2">article</div> <!--Название -->
+                <div class="col-8 col-md-8 col-sm-8">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Контакты</a></li>
+                           
                         </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
-                    </div>
-                </nav>
+                </div>
             </div>
-        </div>
+        </nav>
         <!-- основной контент сайта -->
         <section class="layout"> 
+            <header>
             <!--Параграф с текстовыми загловками  -->
-            <header> 
                 <h1> `здесь создаются ваши Дизайны` </h1>
             </header>
             <!-- картинка-->
             <div class="image">
-                <img src="https://optim.tildacdn.com/tild6138-6564-4732-b832-653061376239/-/format/webp/_3_2_1.png" width="500" height="100" alt="Дизайн">
+                <img src="https://optim.tildacdn.com/tild6138-6564-4732-b832-653061376239/-/format/webp/_3_2_1.png" class="img-fluid h-100 w-100" alt="Дизайн">
             </div>
 
             <!-- секция для скролла вниз -->
             <div class="scroll"> 
-                scroll
+                scroll вниз сайта к форме
             </div>
                 
             <!--контент -->
@@ -60,7 +48,7 @@
                         <p>интерактив</p>
                     </div>
                 <div class="pressbutton"><!--какие-то кнопки  -->
-                        адад
+                        магическая кнопка
                     </div>
                 <div class="line"> <!--декоративная линия -->
                         ааа
