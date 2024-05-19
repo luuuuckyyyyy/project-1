@@ -99,9 +99,11 @@ form,
     }
     .main{
         display: grid;
-        grid: "info pressbutton line" / 1fr 1fr auto;
-        gap:6px
+        grid: 
+        "pressbutton line" 
+        "info line" / 90vw auto;
      }
+
 
      .layout {
         width: auto;
@@ -111,9 +113,9 @@ form,
         grid:
         /* "header" auto "image" 0.5fr "scroll" 0.33fr "main" 1fr "form" 0.33fr "footer" auto */
           "header header header" auto
-          "image image image" 0.33fr
-          "scroll scroll scroll" 0.5fr
-          "main main main" 1fr 
+          "image image image" 20vh
+          "scroll scroll scroll" auto
+          "main main main" 0.5fr 
           "form form form" 1fr
           "footer footer footer" auto;
         gap: 6px;
