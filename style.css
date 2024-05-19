@@ -94,25 +94,32 @@ form,
 @media(max-width:630px) {
     header >h1{
         display: flex;
+        justify-content: center;
         font-size: 2rem;
     }
-
     .main{
         display: grid;
         grid: "info pressbutton line" / 1fr 1fr auto;
         gap:6px
-     }  
+     }
 
-    
-    .layout {
+     .layout {
+        width: auto;
+        height: 1800px;
+      
+        display: grid;
         grid:
-          "header" auto
-          "image" 0.1fr
-          "scroll" auto
-          "main" 0.5fr
-          "form" 0.33fr
-          "footer" auto;
+        /* "header" auto "image" 0.5fr "scroll" 0.33fr "main" 1fr "form" 0.33fr "footer" auto */
+          "header header header" auto
+          "image image image" 0.33fr
+          "scroll scroll scroll" 0.5fr
+          "main main main" 1fr 
+          "form form form" 1fr
+          "footer footer footer" auto;
+        gap: 6px;
       }
+    
+     
     
 }
 
@@ -121,7 +128,6 @@ form,
         padding:5%;
     }
 }
-
 
 @media(max-width:502px) {
     header>h1{
