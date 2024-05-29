@@ -65,13 +65,12 @@ h1{
     min-height: 100vh;
 }
 
-.main {
-    display: grid;
-    grid:
-        "info pressbutton line" auto
-        / 50vw 45vw auto;
-    gap: 5px;
-}
+   .main{
+        display: grid;
+        grid: 
+        "pressbutton line" 
+        "info line" / 90vw auto;
+     }
 
 
 
