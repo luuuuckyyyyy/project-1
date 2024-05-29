@@ -125,6 +125,7 @@ header {
 
 .main {
     grid-area: main;
+    gap: 6px;
 }
 
 .info {
