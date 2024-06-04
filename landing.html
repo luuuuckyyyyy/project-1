@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="landing.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+</head>
+
+<body>
+
+
+    <section class="layout">
+
+        <nav class = "container-navigation">
+            <div class="container-row"><!--навигационная панель сайта -->
+                <div class="container-cell">
+                    <div class="logo-cell">
+                        <img src="" alt="">
+                        <span>ha</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container-menu">
+                    <div class="container-cell"> <a href="">продукт</a></div> <!-- Логотип -svg, подпись-->
+                    <div class="container-cell"><a href="">работы</a></div><!--Название -->
+                    <div class="container-cell"><a href="">отзыв</a></div>
+                    <div class="container-cell"><a href="">действие</a></div>
+                    <div class="container-cell"><a href="">время работы</a></div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="info">gg</div>
+            <div class="background" id="background">
+                <div  class="cell">
+                    <div class="button">f</div>
+                </div>
+                
+                <div class="cell">
+                    <div class="thing">q</div>
+                </div>
+            </div>
+            <div class="info">ff</div>
+            
+        </main>
+
+        <section>
+            <div class="background">
+                <div class="cell">
+                    photos 1
+                </div>
+                
+                <div class="cell">
+                    photos 2
+                </div>
+            </div>
+        </section>
+
+        
+        <div class="info">gg</div>
+    </section>
+
+
+</body>
+
+<script>
+    const element1 = document.getElementsByClassName('background');
+    const height = background.offsetHeight; // Получаем высоту элемента
+
+    const element2 = document.querySelectorAll('section');
+    element2.forEach((element) => {
+    element.style.height = height + 'px';
+    });     
+</script>
+</html>

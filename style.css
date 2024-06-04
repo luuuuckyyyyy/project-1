@@ -156,7 +156,7 @@ footer {
     border-radius: 100%;
     border: 1px solid black;
     position:fixed;
-    right: 1px;
+    left: 1px;
     top:1px;
     z-index: 30; 
     background-color: rgba(255, 255, 255, 0.5);
@@ -213,7 +213,9 @@ footer {
     top: 12px;
   }
   
-  
+  body > section > nav > div > div.col-2.col-md-2.col-sm-2{
+    height: 100px;
+  }
   .burger-menu_nav{
     background-color: #4E5283;
     display:flex;
@@ -237,7 +239,8 @@ footer {
     top:0;
     margin: 0;
     height: 100vh;
-    right: 0;
+    left: 0;
+    width: 30vw;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -o-transition: 0.4s;
@@ -274,6 +277,13 @@ footer {
 
 /* медиа-запросы */
 @media(max-width:630px) {
+
+    .burger-menu_button{
+        margin-top: 0;
+        top: 0;
+        left: 0;
+        transform: scale(0.7);
+    }
     header>h1 {
         display: flex;
         justify-content: center;
@@ -281,21 +291,52 @@ footer {
     }
 
     .main {
+        background-color: white;
+        position: relative;
         display: grid;
         grid:
-            "pressbutton line"
-            "info line" / 90vw auto;
+            "pressbutton"
+            "info"
+            "line"
+            
+    }
+
+    .main::after{
+        z-index: 30;
+        content: "";
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 5%;
+
+        background-color: black;
+    }
+    .main .pressbutton{
+        z-index: 0;
+        background-color: #fff;
+        margin-right: 7vw;
+    }
+    .main .info{
+        z-index: 0;
+        background-color: #fff;
+        margin-right: 7vw;
+    }
+    .main .line{
+        z-index: 0;
+        background-color: #fff;
+        margin-right: 7vw;
+       
     }
 
 
     .layout {
         width: auto;
-        height: 1800px;
+        height: auto;
 
         display: grid;
         grid:
             /* "header" auto "image" 0.5fr "scroll" 0.33fr "main" 1fr "form" 0.33fr "footer" auto */
-            "header" auto "image" 20vh "scroll " auto "main" 0.5fr "form" 1fr "footer" auto;
+            "nav" 1fr "header" 1fr "image" 1fr "scroll" 1fr "main" 1fr "form" 1fr "footer"1fr;
         gap: 6px;
     }
 
