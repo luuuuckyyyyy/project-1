@@ -1,0 +1,157 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+
+.layout{
+    font-size: 50px;
+    height: auto;
+}
+
+.container-block{
+    height: 400px;
+}
+
+.container-navigation{
+    display: flex;
+    flex-direction: row;
+    position: sticky; 
+    top: 0;
+    bottom: 200px;
+    width: 100vw;
+    padding: 0px 40px;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(45px);
+    border:2px solid rgba(255, 255, 255, 0.18);
+    box-shadow: #FF995030 0px 8px 24px;
+    
+    
+}
+
+.container-menu{
+    display: flex; 
+    gap:20px;
+    margin-left: auto; 
+    margin-right: auto; 
+    
+}
+
+.container-cell > a{
+    text-decoration: none;
+    color: #ff84009b ;
+    filter: contrast(0.5);
+}
+
+.container-cell{
+    margin: 10px;
+    padding-left: 25px;
+    display: inline-block;
+    color:black;
+    cursor: pointer;
+    position: relative;
+   
+}
+
+  
+  .container-cell::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    transform: scaleX(1);
+    
+    background-color: blanchedalmond;
+   
+    
+    transform: scaleX(0);
+    height: 2px;
+    bottom:0;
+    left:10px;
+    transform-origin: bottom center;
+    transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    
+  }
+  
+  .container-cell:hover::after{
+    transform: scaleX(1);
+    
+    
+    
+  }
+
+
+.container-cell:last-child {
+    font-weight: 900;
+    margin-left: 120px;
+}
+
+.container-menu .container-cell::before{
+    content: "";
+    left:0;
+    top: 0;
+    width: 2px;
+    height: 50px;
+    border: 1px black solid;
+    border-radius: 30%;
+    background-color: blanchedalmond;
+    position: absolute;
+    transform: translate(-50%, 20%);
+    
+}
+
+main{
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(45px);
+    border:2px solid rgba(255, 255, 255, 0.18);
+    box-shadow:  60px -60px 60px 45px #FF995030 ;    
+}
+
+
+
+.product-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+container{
+ min-height: 25vh;
+ display: flex;
+ flex-direction: row-reverse;
+ left: 20vw;
+ width: auto;
+ justify-content: center;
+ gap: 40px 40px;
+ 
+
+}
+
+.product-item ul{
+    width: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 20px;
+    flex-basis: 100px;
+    flex-grow: 0.5;
+    
+}
+
+.product-item ul li {
+    height: 45%;
+}
+
+container div{
+    flex-basis: 40vw;
+}
+
+.info{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    
+    
+}
+
