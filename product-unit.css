@@ -112,50 +112,36 @@ main{
 
 .unit-item{
   min-height: 100vh;
-  padding: 100px;
+  padding: 1em;
 }
 .unit-content{
-  padding-top: 70px;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
 }
-
-.item-area{
-  flex:2 1 auto;
-  display: flex;
-  flex-direction: column;
-}
-.text-description{
-  flex-shrink: 0;
-
-  border:1px solid black;
-  max-height: 1000px;
-
-  
-}
-
-
-
-.carousel{
-  width: 100%;
-  border: 1px solid black;
-  padding: 50px;
-  margin: 0 auto;
-  padding: 0 1.25rem;
-  font-family: 'Lato', sans-serif;
-  
-  }
-    .button-area{
-      border: 1px solid black;
-      margin-top: 20px;
-    }
-
-
 .text-content{
     position: relative;
     max-width: 100%; 
     border: 1px solid black;
-    flex-grow: 1;
+    flex: 1 1 50%;
 }
+
+.item-area{
+  display: flex;
+  flex-direction: column;
+  
+}
+.text-description{
+  border:1px solid black;
+  max-height: 1109px;
+
+  
+}
+
+
+  .button-area{
+     border: 1px solid black;
+  }
+
+
 
 
 
@@ -189,12 +175,14 @@ ol, li {
   padding: 0;
 }
 
+
+
 .carousel {
+  box-sizing: border-box;
   position: relative;
-  padding: 500px;
+  padding: 100px;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
-  
 }
 
 .carousel__viewport {
@@ -211,7 +199,7 @@ ol, li {
 }
 
 .carousel__slide {
-  padding: 100px;
+  
   position: relative;
   flex: 0 0 100%;
   width: 100%;
@@ -241,7 +229,7 @@ ol, li {
   height: 100%;
   scroll-snap-align: center;
   margin: 0 auto;
-  padding: 10px;
+  padding: 100px;
 }
 
 @media (hover: hover) {
@@ -283,8 +271,8 @@ ol, li {
 
 .carousel__navigation-button {
   display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.5em;
+  height: 1.5em;
   background-color: #333;
   background-clip: content-box;
   border: 0.25rem solid transparent;
@@ -358,6 +346,22 @@ ol, li {
     margin: 0 auto;
   }
 }
+@media(max-width:1400px) {
+  
+    
+}
+
+
+@media(max-width:1200px) {
+  #html{
+    width: 1200px;
+  }
+  .layout{
+    height:100vh;
+  }
+}
+
+
 
 @media(max-width: 992px) {
 
@@ -367,24 +371,61 @@ ol, li {
  
 }
 
-@media(max-width:1200px) {
-  #html{
-    width: 1200px;
-  }
-  .layout{
-    height:100vh;
-  }
 
  
 
-}
 
-@media(max-width:1400px) {
+@media(min-width:1400px) {
+  .item-area{
+    flex: 1 5 50%;
+
+  }
+  .text-description{
+    flex: 5 1 50%;
+
+  }
+
+  .carousel{
+    flex: 2 2 auto;
+    
+  }
+
+  .button-area{
+    flex: 1 1 100%;
+    
+  }
     
 }
 
 
-@media(max-width:480px) {}
 
-@media(max-width:320px) {}
+@media(min-width:320px) {
+
+  .unit-item{
+    padding: 1px 5px;
+    margin: 0 1px;
+    height: 45vh;
+  }
+  .carousel{
+    flex: 5 2 40%;
+    width: auto;
+
+  }
+
+  .button-area{
+    flex: 1 4 10%;
+
+  }
+
+  .item-area{
+    flex: 9 2 auto;
+    gap: 50px;
+
+  }
+
+  .text-description{
+    flex: 1 1 auto;
+
+  }
+}
 
