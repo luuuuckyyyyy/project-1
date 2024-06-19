@@ -166,16 +166,10 @@ container div{
       top: -50%;
     }
 
-    .container-cell:last-child{
-    
-    }
     .container-menu{
         gap:5px;
         font-size: 0.8em;
        
-    }
-    .container-row{
-    
     }
 
     .container-navigation{
